@@ -17,10 +17,10 @@ Algoritmo ejercicio_11
 	Escribir 'Ingresar cantidad de tornillos sin defectos: '
 	Leer tornillosSinDefecto
 	Definir evaluar Como Logico
-	Si (tornillosDefectuoso<200 Y tornillosSinDefecto>1000) Entonces
+	Si (tornillosDefectuoso<200 Y tornillosSinDefecto>10000) Entonces
 		grado <- 8
 	SiNo
-		Si (tornillosSinDefecto>1000) Entonces
+		Si (tornillosSinDefecto>10000) Entonces
 			grado <- 7
 		SiNo
 			Si (tornillosDefectuoso<200) Entonces
