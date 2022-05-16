@@ -35,6 +35,15 @@ Algoritmo ejercicio_8
 	Definir suma Como Real
 	suma = 0
 	
+	Definir contadorPorcentaje Como Entero
+	contadorPorcentaje=0
+	
+	Definir maxExposicion Como Real
+	maxExposicion = 0
+	
+	Definir contadorParcial Como Entero
+	contadorParcial=0
+	
 	Definir promedioDesaprobado Como Real
 
 	
@@ -69,16 +78,37 @@ Algoritmo ejercicio_8
 		Escribir ""
 		
 		Si Integrador > 7.5 Entonces
-			contador = contador +1
+			contadorPorcentaje = contadorPorcentaje +1
 			Escribir "Cantidad integrador aprobados: ", contador
 		Fin Si
 //		
 		Escribir " "
 		
+		Si Expocion > maxExposicion Entonces
+			maxExposicion = Expocion
+		Fin Si
+		
+		Escribir " "
+		
+		
+		Si Parcial >= 4.0 O Parcial <= 7.5 Entonces
+			contadorParcial= contadorParcial+1
+		Fin Si
+		
 		
 	Fin Para
 	
 	Escribir "Nota promedio deprabado final: ", promedioDesaprobado
+	Escribir "Porcentaje de alumnos con una nota mayor al 7.5: ", (contadorPorcentaje*100/N)
+	Escribir "La mayor nota obtenida en la exposicion es: ",maxExposicion
+	Escribir "Cantidad de alumnos con notas entre 4.0 - 7.5: ",contadorParcial
+	
+	
+	
+	
+	
+	
+	
 
 	
 	
