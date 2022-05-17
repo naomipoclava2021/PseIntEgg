@@ -21,9 +21,10 @@ Algoritmo ejercicio_9
 	
 	Para i<-1 Hasta lado Con Paso 1 Hacer
 		Para  j <-1 Hasta lado Con Paso 1 Hacer
-			Escribir Sin Saltar "* "
-			
-			
+			Si j = 1 O j= lado O i = 1 O i = lado Entonces
+				Escribir Sin Saltar "* "
+			SiNo
+				Escribir Sin Saltar "  "
 			Fin Si
 		Fin Para
 		Escribir " "
