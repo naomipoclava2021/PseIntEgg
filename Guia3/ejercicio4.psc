@@ -1,14 +1,18 @@
-Funcion cad <- Buscar ( frase Por Referencia)
+Funcion cad <- Buscar ( frase Por Referencia, letra Por Referencia)
 	Definir retorno Como Entero
-//	Definir acumulador Como Entero
-//	aucumualador = 0
+	Definir acumulador Como Entero
+	acumulador = 0
 	Definir i Como Entero
 	Definir cad Como Caracter
 	
 	Para i<-0 Hasta Longitud(frase) Con Paso 1 Hacer
 		cad = SubCadena(frase,i,i)
 		Escribir cad
+		Si cad = letra Entonces
+			acumulador = acumulador + 1
+		Fin Si
 	Fin Para
+	Escribir "Encontro la letra ", letra, ": ", acumulador , " veces"
 	
 Fin Funcion
 
@@ -20,7 +24,7 @@ Algoritmo ejercicio4
 	Leer letra
 	
 	Definir resultado Como Caracter
-	resultado = Buscar(frase)
+	resultado = Buscar(frase, letra)
 	Escribir resultado
 
 //	Definir queHace Como Caracter
